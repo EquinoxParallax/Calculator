@@ -43,7 +43,8 @@ def division_fuction():
          percent_fuction()
         elif(int(x)==2):
             Remainder_fuction()
-    print ("Thank you for using my program!")
+        elif (x==0):
+            continue
 #############Prime number identifier##############
 def prime_fuction():
     x=pfi("Give me a number")
