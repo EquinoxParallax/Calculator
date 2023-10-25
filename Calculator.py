@@ -1,3 +1,4 @@
+import math
 ############## Global Vars ###############
 debug_on = False
 
@@ -7,6 +8,20 @@ def debug_print(msg):
         print (msg)
     else:
         pass
+###################Multiplycation fuctions#######
+def to_the_power():
+    z=pfi("What number?")
+    y=pfi("To the power of what?")
+    print(math.pow(z, y))
+
+def Multiply():
+    x=pfi("Hello, \nDear human, \nPlease tell me two numbers you would like me to multiply.\n(P.S one now one later)")
+    y=pfi("And another one?")
+    y=int (y)
+    print (int(x) * y)
+def factorial():
+    y=pfi("What number do you want the factorial of")
+    print(math.factorial(y))
 ###################Division fuctions#############
 def Remainder_fuction():
     e=pfi("What number would you like to divide")
@@ -30,10 +45,17 @@ def substraction_fuction():
     print(c-d)
 ##############Multiplication################
 def multy_fuction():
-    x=pfi("Hello, \nDear human, \nPlease tell me two numbers you would like me to multiply.\n(P.S one now one later)")
-    y=pfi("And another one?")
-    y=int (y)
-    print (int(x) * y)
+    w=-1
+    while w!=0:
+        w=pfi("would you like to \n1:Multiply, \n2:____ to the power, \n3:factorial, \n0:or Go back?")
+        if(int(w)==1):
+            Multiply()
+        elif(int(w)==2):
+            to_the_power()
+        elif(int(w)==3):
+            factorial()
+        elif (w==0):
+            continue
 #############Division######################
 def division_fuction():
     x=-1
